@@ -1,0 +1,23 @@
+Refresh
+on:
+  # performed every two hours
+  schedule:
+    - cron: "0 */2 * * *"
+name: Process
+on:
+  schedule:
+    - cron: "05 03 * * *"
+    - cron: "05 11 * * *"
+name: Delete
+on:
+  schedule:
+    - cron: "0 0 * * SUN"
+name: Collect
+on:
+  # executed once a week on Sundays at 00:00
+  schedule:
+    - cron: "0 0 * * 1"
+name: Checkin
+on:
+  schedule:
+    - cron: "45 02 * * *"
